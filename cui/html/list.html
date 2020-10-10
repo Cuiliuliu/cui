@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品列表</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../dist/min-css/scss.css" />
+    <link rel="stylesheet" href="../scss/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="../dist/min-css/shop.css">
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/indexjq.js"></script>
+    <script>
+        window.onload = function () {
+            var oConverselogo = document.getElementById("converselogo");
+
+            oConverselogo.onclick = function () {
+                window.location.href = "../index.html"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="headerbox" id="headerbox">
+        <div id="header">
+            <img src="../images/logo.png" alt="" id="converselogo" />
+            <h1 style="
+            color: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-weight: 500;
+          ">
+                商品列表
+            </h1>
+        </div>
+    </div>
+
+
+    <div id="footerbox">
+        <div id="footer">
+            <a href="#">关于我们</a>
+            <a href="#">帮助和购物指南</a>
+            <a href="#">隐私政策</a>
+            <a href="#">使用规则</a>
+            <a href="#" id="fimg"><img src="https://image.converse.com.cn/images/commons/header-footer-new2.png"
+                    alt=""></a>
+            <p>@匡威体育用品（中国）有限公司 保留所有权利</p>
+            <a href="#">沪ICP备11044134号-2</a>
+            <a href="#"><img src="https://image.converse.com.cn/images/homepage/beiAn.png" alt="">沪公网安备
+                31011002001667号</a>
+            <a href="#"><img src="https://image.converse.com.cn/images/commons/business-license.png" alt="">电子营业执照</a>
+            <a href="#">公司证照</a>
+            <img src="https://image.converse.com.cn/images/cautionIcon.png" alt="" id="last">
+        </div>
+    </div>
+
+
+    <!-- <script type="module">
+        import ajax from "./ajax.js";
+        var oBtn = document.getElementById("btn");
+        var oInput = document.querySelectorAll("input");
+
+        oBtn.onclick = function(){
+            ajax({
+                type:'get',
+                url:'login.php',
+                data:{
+                    username:oInput[0].value,
+                    password:oInput[1].value,
+                },
+                success:function(msg){
+                    var obb = JSON.stringify(msg);
+                    var obj = JSON.parse(obb);
+                    if(obj.code){
+                        alert("登陆失败！")
+                     }else{
+                        alert("登陆成功！")
+                        window.location.href = "../index.html"
+                    }
+                    
+                },
+                error:function(msg){
+                    console.log("Error:" + msg);
+                }
+            });
+        }
+    </script> -->
+</body>
+
+</html>

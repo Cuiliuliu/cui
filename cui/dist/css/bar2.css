@@ -1,0 +1,255 @@
+#headerbox2 {
+  background-color: #000;
+  width: 100%;
+  position: fixed;
+  z-index: 999; }
+  #headerbox2 #header {
+    height: 50px;
+    width: 1367.2px;
+    margin: 0 auto;
+    position: relative; }
+    #headerbox2 #header img {
+      position: absolute;
+      line-height: 50px;
+      top: 50%;
+      margin: -10px 0 0 -16.5px; }
+    #headerbox2 #header div {
+      width: 50px;
+      height: 50px;
+      float: right;
+      margin: 0 15px 0 20px;
+      position: relative; }
+    #headerbox2 #header a {
+      text-decoration: none;
+      text-align: center;
+      line-height: 30px;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 800;
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #464646;
+      position: absolute;
+      top: 20%;
+      right: 0;
+      border-radius: 30px; }
+      #headerbox2 #header a:hover {
+        background-color: #b7b7b7; }
+    #headerbox2 #header #big a {
+      font-size: 24px; }
+    #headerbox2 #header #shopcar {
+      width: 83px;
+      margin: 0 10px 0 20px; }
+      #headerbox2 #header #shopcar a {
+        width: 36px;
+        background-color: transparent;
+        font-size: 12px;
+        position: absolute;
+        left: 0;
+        cursor: pointer; }
+        #headerbox2 #header #shopcar a:hover {
+          text-decoration: underline; }
+      #headerbox2 #header #shopcar span {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        font-weight: 800;
+        background-color: #940000;
+        position: absolute;
+        top: 20%;
+        right: 0; }
+    #headerbox2 #header #log {
+      width: 100px;
+      position: relative; }
+      #headerbox2 #header #log:hover .iconfont {
+        background-color: #b7b7b7; }
+      #headerbox2 #header #log div {
+        width: 70px;
+        height: 15px;
+        font-size: 12px;
+        position: absolute;
+        top: 41%;
+        left: -20%; }
+      #headerbox2 #header #log #dl {
+        position: absolute;
+        left: 0;
+        top: -10px;
+        background-color: transparent;
+        font-size: 12px; }
+        #headerbox2 #header #log #dl:hover {
+          text-decoration: underline; }
+      #headerbox2 #header #log #zc {
+        background-color: transparent;
+        font-size: 12px;
+        position: absolute;
+        right: 0;
+        top: -10px; }
+        #headerbox2 #header #log #zc:hover {
+          text-decoration: underline; }
+      #headerbox2 #header #log #o {
+        background-color: transparent;
+        font-size: 12px;
+        position: absolute;
+        left: 20px;
+        top: -10px;
+        cursor: none; }
+      #headerbox2 #header #log .iconfont {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #464646;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 800;
+        position: absolute;
+        top: 20%;
+        right: -10px; }
+
+#listbox2 {
+  background-color: #464646;
+  position: fixed;
+  top: 50px;
+  width: 100%; }
+  #listbox2 #list {
+    width: 1367.2px;
+    margin: 0 auto; }
+    #listbox2 #list ul {
+      width: 864px;
+      height: 30px;
+      margin: 0 auto; }
+      #listbox2 #list ul li {
+        list-style: none;
+        width: 134px;
+        float: left;
+        position: relative;
+        margin: 0 5px; }
+      #listbox2 #list ul a {
+        display: block;
+        height: 30px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 30px; }
+        #listbox2 #list ul a:hover {
+          text-decoration: underline; }
+      #listbox2 #list ul .no:hover {
+        text-decoration: none; }
+      #listbox2 #list ul .iconfont {
+        position: absolute;
+        color: #fff;
+        bottom: 20%;
+        font-size: 14px;
+        left: 65%; }
+      #listbox2 #list ul #io1 {
+        left: 80%; }
+      #listbox2 #list ul #io2 {
+        left: 80%; }
+      #listbox2 #list ul #io3 {
+        left: 80%; }
+
+#boxul2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 80px;
+  z-index: 0; }
+  #boxul2 #ul1 {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 1; }
+    #boxul2 #ul1 ul {
+      list-style: none;
+      border-bottom: 1px solid #999;
+      height: 130px;
+      background-color: #fff; }
+      #boxul2 #ul1 ul li {
+        float: left;
+        position: relative;
+        left: 16%;
+        margin: 0 3px; }
+        #boxul2 #ul1 ul li a {
+          display: block;
+          height: 130px;
+          width: 130px;
+          text-decoration: none;
+          position: relative;
+          font-size: 14px;
+          color: #000; }
+          #boxul2 #ul1 ul li a:hover p {
+            text-decoration: underline;
+            color: #b7b7b7; }
+          #boxul2 #ul1 ul li a p {
+            position: absolute;
+            bottom: 10%;
+            left: 39%; }
+  #boxul2 #ul2 {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 1; }
+    #boxul2 #ul2 ul {
+      list-style: none;
+      border-bottom: 1px solid #999;
+      height: 130px;
+      background-color: #fff; }
+      #boxul2 #ul2 ul li {
+        float: left;
+        position: relative;
+        left: 16%;
+        margin: 0 3px; }
+        #boxul2 #ul2 ul li a {
+          display: block;
+          height: 130px;
+          width: 130px;
+          text-decoration: none;
+          position: relative;
+          font-size: 14px;
+          color: #000; }
+          #boxul2 #ul2 ul li a:hover p {
+            text-decoration: underline;
+            color: #b7b7b7; }
+          #boxul2 #ul2 ul li a p {
+            position: absolute;
+            bottom: 10%;
+            left: 39%; }
+  #boxul2 #ul3 {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 1; }
+    #boxul2 #ul3 ul {
+      list-style: none;
+      border-bottom: 1px solid #999;
+      height: 130px;
+      background-color: #fff; }
+      #boxul2 #ul3 ul li {
+        float: left;
+        position: relative;
+        left: 32%;
+        margin: 0 3px; }
+        #boxul2 #ul3 ul li a {
+          display: block;
+          height: 130px;
+          width: 130px;
+          text-decoration: none;
+          position: relative;
+          font-size: 14px;
+          color: #000; }
+          #boxul2 #ul3 ul li a:hover p {
+            text-decoration: underline;
+            color: #b7b7b7; }
+          #boxul2 #ul3 ul li a p {
+            position: absolute;
+            bottom: 10%;
+            left: 39%; }

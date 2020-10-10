@@ -1,0 +1,83 @@
+#more {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  bottom: -240px;
+  left: 15%;
+  background-color: #000;
+  text-align: center; }
+  #more:hover a {
+    font-weight: 800; }
+  #more a {
+    color: #fff;
+    text-decoration: none; }
+  #more span {
+    float: left;
+    width: 20px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    bottom: 8px;
+    left: 315px;
+    z-index: 2;
+    cursor: pointer; }
+    #more span img {
+      position: absolute;
+      bottom: -58px;
+      left: -8px; }
+
+form {
+  width: 500px;
+  height: 500px;
+  border-left: 2px dashed #000;
+  position: absolute;
+  left: 40%;
+  top: 180%; }
+  form #loginform {
+    width: 400px;
+    height: 350px;
+    margin: 80px 110px; }
+    form #loginform h1 {
+      line-height: 60px;
+      font-weight: 500; }
+    form #loginform div {
+      margin-top: 20px; }
+    form #loginform .usern {
+      width: 300px;
+      height: 40px;
+      background-color: green; }
+      form #loginform .usern input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        text-indent: 20px; }
+    form #loginform .pwd {
+      width: 300px;
+      height: 40px;
+      background-color: skyblue; }
+      form #loginform .pwd input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        text-indent: 20px; }
+    form #loginform .repwd {
+      width: 300px;
+      height: 40px;
+      background-color: yellow; }
+      form #loginform .repwd input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        text-indent: 20px; }
+    form #loginform .logbtn {
+      margin-top: 50px;
+      width: 300px;
+      height: 40px;
+      background-color: #ccc;
+      border: 1px solid #000;
+      color: #fff;
+      font-size: 20px; }
+
+#footerboxr {
+  top: 700px; }

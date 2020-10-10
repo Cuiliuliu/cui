@@ -1,0 +1,161 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+  body #contentbox {
+    width: 100%;
+    height: 620px;
+    position: relative;
+    top: 0; }
+    body #contentbox #content {
+      width: 1000px;
+      height: 100%;
+      margin: 0 auto;
+      position: relative; }
+      body #contentbox #content #list {
+        width: 200px;
+        height: 130px;
+        position: absolute;
+        top: 80px;
+        cursor: pointer;
+        display: block; }
+        body #contentbox #content #list #share {
+          width: 100%;
+          height: 30px; }
+          body #contentbox #content #list #share span {
+            float: left;
+            width: 35px;
+            height: 30px;
+            overflow: hidden;
+            position: relative; }
+            body #contentbox #content #list #share span img {
+              position: absolute;
+              left: 2px; }
+          body #contentbox #content #list #share p {
+            position: absolute;
+            line-height: 30px;
+            font-size: 14px;
+            left: 40px; }
+            body #contentbox #content #list #share p:hover {
+              color: #999;
+              text-decoration: underline; }
+        body #contentbox #content #list #collect {
+          width: 100%;
+          height: 30px;
+          margin-top: 20px;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer; }
+          body #contentbox #content #list #collect span {
+            float: left;
+            width: 35px;
+            height: 30px;
+            overflow: hidden;
+            position: relative; }
+            body #contentbox #content #list #collect span img {
+              position: absolute;
+              left: 2px;
+              top: -42px; }
+          body #contentbox #content #list #collect p {
+            position: absolute;
+            line-height: 30px;
+            font-size: 14px;
+            left: 40px; }
+            body #contentbox #content #list #collect p:hover {
+              color: #999;
+              text-decoration: underline; }
+        body #contentbox #content #list #stars {
+          width: 100%;
+          height: 30px;
+          margin-top: 20px;
+          overflow: hidden; }
+      body #contentbox #content #big {
+        width: 200px;
+        height: 500px;
+        background-color: #999999;
+        position: absolute;
+        top: 50px;
+        overflow: hidden;
+        display: none; }
+        body #contentbox #content #big img {
+          position: absolute; }
+      body #contentbox #content #smallbox {
+        width: 520px;
+        height: 505px;
+        position: relative;
+        left: 250px;
+        top: 50px; }
+        body #contentbox #content #smallbox h2 {
+          text-align: center; }
+        body #contentbox #content #smallbox #small {
+          width: 450px;
+          height: 450px;
+          cursor: url(../../images/zoom-add.png), default;
+          position: absolute;
+          bottom: 0;
+          left: 35px; }
+          body #contentbox #content #smallbox #small img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0; }
+          body #contentbox #content #smallbox #small #mark {
+            width: 60px;
+            height: 150px;
+            background-color: #fff;
+            border: 1px solid #000;
+            position: absolute;
+            opacity: 0.3;
+            display: none; }
+      body #contentbox #content #right {
+        width: 200px;
+        height: 505px;
+        position: absolute;
+        right: 0;
+        top: 50px; }
+        body #contentbox #content #right #rtop {
+          width: 100%;
+          height: 150px;
+          border-bottom: 1px solid #999; }
+          body #contentbox #content #right #rtop span {
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-left: 1px;
+            border: 1px solid #999;
+            position: relative;
+            cursor: pointer; }
+            body #contentbox #content #right #rtop span img {
+              width: 38px;
+              height: 38px;
+              position: relative;
+              left: 5px;
+              bottom: -8px; }
+          body #contentbox #content #right #rtop p {
+            width: 100%;
+            float: left;
+            font-size: 12px;
+            position: relative;
+            top: 20px; }
+          body #contentbox #content #right #rtop #size {
+            width: 25px;
+            height: 25px;
+            border: none;
+            position: relative;
+            top: 30px;
+            overflow: hidden; }
+            body #contentbox #content #right #rtop #size img {
+              width: 200px;
+              height: 250px;
+              position: absolute;
+              left: -68px;
+              top: -87px; }
+          body #contentbox #content #right #rtop a {
+            color: #000;
+            font-size: 15px;
+            position: relative;
+            top: 115px;
+            left: -80px;
+            text-decoration: underline solid #999; }
+  body #footerbox {
+    top: 700px; }

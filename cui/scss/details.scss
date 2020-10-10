@@ -1,0 +1,234 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  #contentbox {
+    width: 100%;
+    height: 620px;
+    // background-color: pink;
+    position: relative;
+    top: 0;
+
+    #content {
+      width: 1000px;
+      height: 100%;
+      margin: 0 auto;
+      //   background-color: yellow;
+      position: relative;
+      #list {
+        width: 200px;
+        height: 130px;
+        position: absolute;
+        // background-color: pink;
+        top: 80px;
+        cursor: pointer;
+        display: block;
+
+        #share {
+          width: 100%;
+          height: 30px;
+          // background-color: skyblue;
+          // overflow: hidden;
+
+          span {
+            float: left;
+            width: 35px;
+            height: 30px;
+            overflow: hidden;
+            // background-color: green;
+            position: relative;
+
+            img {
+              position: absolute;
+              left: 2px;
+              // top: -42px;
+            }
+          }
+
+          p {
+            position: absolute;
+            line-height: 30px;
+            font-size: 14px;
+            left: 40px;
+
+            &:hover {
+              color: #999;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        #collect {
+          width: 100%;
+          height: 30px;
+          // background-color: skyblue;
+          margin-top: 20px;
+          position: relative;
+          overflow: hidden;
+          cursor: pointer;
+
+          span {
+            float: left;
+            width: 35px;
+            height: 30px;
+            overflow: hidden;
+            // background-color: green;
+            position: relative;
+
+            img {
+              position: absolute;
+              left: 2px;
+              top: -42px;
+            }
+          }
+
+          p {
+            position: absolute;
+            line-height: 30px;
+            font-size: 14px;
+            left: 40px;
+
+            &:hover {
+              color: #999;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        #stars {
+          width: 100%;
+          height: 30px;
+          // background-color: skyblue;
+          margin-top: 20px;
+          // background: url(../images/stars.png) repeat-x scroll 0 0 transparent;
+          overflow: hidden;
+        }
+      }
+
+      #big {
+        width: 200px;
+        height: 500px;
+        background-color: #999999;
+        position: absolute;
+        top: 50px;
+        overflow: hidden;
+        // opacity: 0.5;
+        display: none;
+
+        img {
+          position: absolute;
+        }
+      }
+
+      #smallbox {
+        width: 520px;
+        height: 505px;
+        // background-color: skyblue;
+        position: relative;
+        left: 250px;
+        top: 50px;
+
+        h2 {
+          text-align: center;
+        }
+
+        #small {
+          width: 450px;
+          height: 450px;
+          // background-color: greenyellow;
+          cursor: url(../../images/zoom-add.png), default;
+          position: absolute;
+          bottom: 0;
+          left: 35px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+          }
+
+          #mark {
+            width: 60px;
+            height: 150px;
+            background-color: #fff;
+            border: 1px solid #000;
+            position: absolute;
+            opacity: 0.3;
+            display: none;
+          }
+        }
+      }
+
+      #right {
+        width: 200px;
+        height: 505px;
+        // background-color: orange;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        #rtop {
+          width: 100%;
+          height: 150px;
+          //   background-color: skyblue;
+          border-bottom: 1px solid #999;
+          span {
+            width: 50px;
+            height: 50px;
+            // background-color: green;
+            float: left;
+            margin-left: 1px;
+            border: 1px solid #999;
+            position: relative;
+            cursor: pointer;
+            img {
+              width: 38px;
+              height: 38px;
+              //   margin: 0 auto;
+              position: relative;
+              left: 5px;
+              bottom: -8px;
+            }
+          }
+          p {
+            width: 100%;
+            // background-color: green;
+            float: left;
+            font-size: 12px;
+            position: relative;
+            top: 20px;
+          }
+          #size {
+            width: 25px;
+            height: 25px;
+            border: none;
+            // background-color: green;
+            position: relative;
+            top: 30px;
+            overflow: hidden;
+            img {
+              width: 200px;
+              height: 250px;
+              position: absolute;
+              left: -68px;
+              top: -87px;
+            }
+          }
+          a {
+            color: #000;
+            font-size: 15px;
+            position: relative;
+            top: 115px;
+            left: -80px;
+            text-decoration: underline solid #999;
+          }
+        }
+      }
+    }
+  }
+
+  #footerbox {
+    top: 700px;
+  }
+}

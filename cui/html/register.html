@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../dist/min-css/scss.css" />
+    <link rel="stylesheet" href="../scss/iconfont/iconfont.css" />
+    <link rel="stylesheet" href="../dist/min-css/login.css" />
+    <link rel="stylesheet" href="../dist/min-css/register.css">
+    <script src="../js/jquery-1.10.1.min.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/indexjq.js"></script>
+    <script>
+        window.onload = function () {
+            var oConverselogo = document.getElementById("converselogo");
+
+            oConverselogo.onclick = function () {
+                window.location.href = "../index.html"
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="headerbox" id="headerbox">
+        <div id="header">
+            <img src="../images/logo.png" alt="" id="converselogo" />
+            <h1 style="
+            color: #fff;
+            text-align: center;
+            line-height: 80px;
+            font-weight: 500;
+          ">
+                请注册匡威
+            </h1>
+        </div>
+    </div>
+    <div id="more">
+        <a href="login.html">去登陆</a>
+        <span>
+            <img src="../images/sprites.png" alt="" id="moreimg" />
+        </span>
+    </div>
+    <form action="">
+        <div id="loginform">
+            <h1>还未成为会员？</h1>
+            <div class="usern">
+                <!-- <label for="username">用户名:</label> -->
+                <input type="text" name="username" class="username" placeholder="邮箱\手机号" />
+            </div>
+            <div class="pwd">
+                <!-- <label for="password">密&nbsp;&nbsp;&nbsp;码:</label> -->
+                <input type="text" name="password" class="password" placeholder="密码" />
+            </div>
+            <div class="repwd">
+                <!-- <label for="password">密&nbsp;&nbsp;&nbsp;码:</label> -->
+                <input type="text" name="rpassword" class="rpassword" placeholder="确认密码" />
+            </div>
+            <button type="button" class="logbtn" id="btn">注&nbsp;&nbsp;&nbsp;册</button>
+        </div>
+    </form>
+
+    <div id="footerbox">
+        <div id="footer">
+            <a href="#">关于我们</a>
+            <a href="#">帮助和购物指南</a>
+            <a href="#">隐私政策</a>
+            <a href="#">使用规则</a>
+            <a href="#" id="fimg"><img src="https://image.converse.com.cn/images/commons/header-footer-new2.png"
+                    alt=""></a>
+            <p>@匡威体育用品（中国）有限公司 保留所有权利</p>
+            <a href="#">沪ICP备11044134号-2</a>
+            <a href="#"><img src="https://image.converse.com.cn/images/homepage/beiAn.png" alt="">沪公网安备
+                31011002001667号</a>
+            <a href="#"><img src="https://image.converse.com.cn/images/commons/business-license.png" alt="">电子营业执照</a>
+            <a href="#">公司证照</a>
+            <img src="https://image.converse.com.cn/images/cautionIcon.png" alt="" id="last">
+        </div>
+    </div>
+
+    <script type="module">
+        import ajax from "./ajax.js";
+        var oBtn = document.getElementById("btn");
+        var oInput = document.querySelectorAll("input");
+        oBtn.onclick = function(){
+            ajax({
+                type:'get',
+                url:'register.php',
+                data:{
+                    username:oInput[0].value,
+                    password:oInput[1].value,
+                    repassword:oInput[2].value,
+                    createtime: new Date().getTime(),
+                },
+                success:function(msg){
+                    // console.log(msg)
+                    var obb = JSON.stringify(msg);
+                    var obj = JSON.parse(obb);
+                    // alert(obj.code);
+                    if(obj.code){
+                        alert("注册失败！")
+                     }else{
+                        alert("注册成功！")
+                        window.location.href = "./login.html"
+                    }
+                    
+                },
+                error:function(msg){
+                    console.log("Error:" + msg);
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
